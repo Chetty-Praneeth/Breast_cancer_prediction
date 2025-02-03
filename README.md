@@ -69,28 +69,28 @@ The model performance is evaluated using:
    ```bash
    git clone https://github.com/YourUsername/BreastCancerPrediction.git
    cd BreastCancerPrediction
-   
-Install Dependencies: With requirements.txt in your project folder, you can install all the necessary dependencies in one go by running:
+
+2. Install Dependencies: With requirements.txt in your project folder, you can install all the necessary dependencies in one go by running:
 pip install -r requirements.txt
-Replace the data.csv file with your dataset (ensure it has the same structure as expected in the code).
-Run the Model:
+3. Replace the data.csv file with your dataset (ensure it has the same structure as expected in the code).
+4. Run the Model:
 python breast_cancer_prediction.py
-Output:
+## Output:
 
 The program prints the accuracy, precision, recall, and confusion matrix for model evaluation.
 The model is saved as model.pkl using joblib for future predictions.
-Other Models Tested:
+## Other Models Tested:
 
 SVC (Support Vector Classifier)
 KNeighborsClassifier
 These models were tested for comparison to determine the best performing algorithm.
 
-Future Improvements:
+## Future Improvements:
 
 Experiment with other models like Logistic Regression, Neural Networks, etc.
 Tune additional hyperparameters.
 Implement data normalization and scaling for better performance.
 Deploy the model into a web app or API for real-time prediction.
-License:
+## License:
 
 This project is licensed under the MIT License - see the LICENSE file for details.
