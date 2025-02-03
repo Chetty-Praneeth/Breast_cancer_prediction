@@ -63,7 +63,7 @@ Once the user enters the required input features in the **Streamlit UI**, the tr
    - **Malignant (1):** Indicates that the tumor is likely cancerous and may require further medical evaluation.  
 
 ### Example Output:
-![Prediction Output](/Users/praneethchetty/Documents/myprojects/Breast_cancer_prediction/images)
+![Prediction Output](/Users/praneethchetty/Documents/myprojects/Breast_cancer_prediction/images/output.png)
 
 
 ## Fitness Function and Evaluation Metrics:
