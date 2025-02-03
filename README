@@ -1,59 +1,41 @@
-Breast Cancer Prediction using Machine Learning
+# Breast Cancer Prediction using Machine Learning
 
 This project uses machine learning models to predict the diagnosis of breast cancer based on data from a CSV file. The dataset contains features such as the radius, perimeter, and area of cell nuclei present in breast cancer biopsies. The goal is to predict whether a tumor is benign (0) or malignant (1).
 
-Technologies Used
+## Technologies Used
+- Python
+- Pandas
+- Numpy
+- Scikit-learn
+- Jupyter Notebook
+- Joblib (for model serialization)
 
-Python
-Pandas
-Numpy
-Scikit-learn
-Jupyter Notebook
-Joblib (for model serialization)
-Project Overview
-
+## Project Overview
 This project involves the following key steps:
+1. **Data Preprocessing**: 
+   - Load the dataset using Pandas.
+   - Drop unnecessary columns like 'id' and 'Unnamed: 32'.
+   - Map the 'diagnosis' column from 'B' and 'M' to 0 and 1 respectively.
+   
+2. **Feature Engineering**: 
+   - The features are grouped into three categories: 
+     - Mean features
+     - Standard Error (SE) features
+     - Worst features
+   
+3. **Model Training**: 
+   - A Random Forest Classifier is used to predict the diagnosis of breast cancer.
+   - Hyperparameters like `max_depth` and `n_estimators` are tuned using GridSearchCV to optimize the model.
 
-Data Preprocessing:
-Load the dataset using Pandas.
-Drop unnecessary columns like 'id' and 'Unnamed: 32'.
-Map the 'diagnosis' column from 'B' and 'M' to 0 and 1 respectively.
-Feature Engineering:
-The features are grouped into three categories:
-Mean features
-Standard Error (SE) features
-Worst features
-Model Training:
-A Random Forest Classifier is used to predict the diagnosis of breast cancer.
-Hyperparameters like max_depth and n_estimators are tuned using GridSearchCV to optimize the model.
-Model Evaluation:
-The model’s accuracy, precision, and recall scores are calculated.
-A confusion matrix is used to evaluate the model’s performance.
-Model Saving:
-The trained model is saved using joblib for future use.
-Steps to Run the Code
+4. **Model Evaluation**:
+   - The model’s accuracy, precision, and recall scores are calculated.
+   - A confusion matrix is used to evaluate the model’s performance.
+   
+5. **Model Saving**:
+   - The trained model is saved using `joblib` for future use.
 
-Clone this repository or download the Jupyter Notebook file.
-Make sure to have the required libraries installed. You can install them using:
-pip install pandas numpy scikit-learn joblib
-Replace the data.csv file with the dataset you are using (make sure it has the same structure as the one in the code).
-Run the Jupyter Notebook to load the dataset, preprocess it, and train the model.
-The final model will be saved as model.pkl which can be used for future predictions.
-Output
-
-The model’s accuracy, precision, and recall are printed after evaluation. The confusion matrix is also shown for a better understanding of the model’s performance.
-
-Try Other Models
-
-In addition to RandomForestClassifier, other models like:
-
-SVC (Support Vector Classifier)
-KNeighbors Classifier
-MPCCLassifier
-are explored in the code for comparison.
-
-Future Improvements
-
-Experiment with other models and hyperparameter tuning techniques.
-Enhance data preprocessing with normalization or scaling.
-Deploy the model into a web app for real-time prediction.
+## Steps to Run the Code
+1. Clone this repository or download the Jupyter Notebook file.
+2. Make sure to have the required libraries installed. You can install them using:
+   ```bash
+   pip install pandas numpy scikit-learn joblib
