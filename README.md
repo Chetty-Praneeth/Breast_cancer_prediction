@@ -51,6 +51,14 @@ This project involves the following key steps:
 
 ### Output:
 - **Diagnosis**: The classification of the tumor as either benign (`0`) or malignant (`1`).
+![Once the user enters the required input features in the Streamlit UI, the trained model processes the data and provides a prediction on whether the tumor is Benign (Non-Cancerous) or Malignant (Cancerous).
+
+How It Works:
+The user inputs relevant features such as radius, perimeter, area, compactness, concavity, etc.
+The trained Random Forest Classifier analyzes the input data.
+The model outputs a classification result:
+Benign (0): Indicates that the tumor is likely non-cancerous.
+Malignant (1): Indicates that the tumor is likely cancerous and may require further medical evaluation.](image/output.png)
 
 ## Fitness Function and Evaluation Metrics:
 The model performance is evaluated using:
