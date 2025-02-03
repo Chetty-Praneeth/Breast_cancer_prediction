@@ -81,9 +81,9 @@ The program prints the accuracy, precision, recall, and confusion matrix for mod
 The model is saved as model.pkl using joblib for future predictions.
 ## Other Models Tested:
 
-SVC (Support Vector Classifier)
-KNeighborsClassifier
-These models were tested for comparison to determine the best performing algorithm.
+- SVC (Support Vector Classifier)
+- KNeighborsClassifier
+- These models were tested for comparison to determine the best performing algorithm.
 
 ## Future Improvements:
 
